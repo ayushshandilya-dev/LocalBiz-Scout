@@ -29,11 +29,13 @@ from rapidfuzz import fuzz
 from .config import RuleConfig
 from .findings import DuplicateCandidate
 from .normalization import (
+    AddressComponents,
     as_text,
     normalize_address,
     normalize_name,
     normalize_phone,
     normalize_text,
+    parse_address_components,
 )
 from .records import get_record_id
 
@@ -54,6 +56,34 @@ _FIELD_NORMALIZERS: dict[str, Callable[[object], str]] = {
 def _normalize_field(field_name: str, value: object) -> str:
     normalizer = _FIELD_NORMALIZERS.get(field_name, normalize_text)
     return normalizer(value)
+
+
+def _address_components_conflict(
+    components_a: AddressComponents,
+    components_b: AddressComponents,
+) -> bool:
+    """Return True only when an unambiguous address component disagrees.
+
+    A component that is ``None`` (unknown) is never treated as a conflict, so
+    unparseable or atypical addresses keep flowing through the ordinary
+    similarity logic.
+    """
+
+    if (
+        components_a.house_number is not None
+        and components_b.house_number is not None
+        and components_a.house_number != components_b.house_number
+    ):
+        return True
+
+    if (
+        components_a.unit is not None
+        and components_b.unit is not None
+        and components_a.unit != components_b.unit
+    ):
+        return True
+
+    return False
 
 
 def find_duplicate_candidates(
@@ -163,6 +193,15 @@ def _evaluate_pair(
         name_similarity >= config.name_similarity_threshold
         and address_similarity >= config.address_similarity_threshold
     ):
+        # High overall similarity can still hide a different physical location
+        # (a different house number) or a different unit in the same building.
+        # Reject the fuzzy candidate only when both sides parsed the component
+        # confidently and the values disagree; unknown components fall through.
+        components_a = parse_address_components(named_a.get("address", ""))
+        components_b = parse_address_components(named_b.get("address", ""))
+        if _address_components_conflict(components_a, components_b):
+            return None
+
         return DuplicateCandidate(
             business_id_a=id_a,
             business_id_b=id_b,
