@@ -146,8 +146,9 @@ it does not exist. The command writes three files:
 | `duplicates_review.csv` | One row per duplicate candidate: both IDs, reason, similarity, and available evidence fields. |
 
 Exit codes: `0` on success, `2` for an invalid input or unwritable output (with
-a short message on stderr rather than a traceback). `python3 -m localbiz_scout
---help` and `... analyze --help` describe the options.
+a short message on stderr rather than a traceback).
+`PYTHONPATH=src python3 -m localbiz_scout --help` and
+`PYTHONPATH=src python3 -m localbiz_scout analyze --help` describe the options.
 
 ### CLI limitations
 

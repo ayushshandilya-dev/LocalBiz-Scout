@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "localbiz-scout"
 version = "0.1.0"
-description = "Scaffold for collecting and de-duplicating local business records."
+description = "Deterministic, offline data-quality checks and duplicate-candidate review for local business records, with optional local-AI adjudication of ambiguous candidates."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
