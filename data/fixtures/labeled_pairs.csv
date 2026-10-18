@@ -1,0 +1,14 @@
+business_id_a,business_id_b,label
+biz-0001,biz-0002,1
+biz-0001,biz-0003,1
+biz-0001,biz-0017,0
+biz-0002,biz-0003,1
+biz-0004,biz-0005,1
+biz-0006,biz-0007,1
+biz-0006,biz-0008,1
+biz-0007,biz-0008,1
+biz-0009,biz-0014,0
+biz-0010,biz-0011,1
+biz-0010,biz-0015,0
+biz-0012,biz-0013,1
+biz-0012,biz-0016,0

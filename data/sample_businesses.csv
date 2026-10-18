@@ -1,0 +1,18 @@
+business_id,name,address,city,state,postal_code,phone,website,category
+biz-0001,Blue Bottle Coffee,1201 S Congress Ave,Austin,TX,78704,512-555-0101,https://bluebottle.example.com,cafe
+biz-0002,  Blue  Bottle  Coffee ,1201 S Congress Ave,Austin,TX,78704,512-555-0101,https://bluebottle.example.com,cafe
+biz-0003,Blue Bottle Coffee,1201 S Congress Ave,Austin,TX,78704,(512) 555-0101,https://bluebottle.example.com,cafe
+biz-0004,Riverstone Dental,88 Rio Grande St,Austin,TX,78701,512-555-0142,https://riverstonedental.example.com,dentist
+biz-0005,Riverstone Dental LLC,88 Rio Grande St,Austin,TX,78701,512-555-0142,https://riverstonedental.example.com,dentist
+biz-0006,AutoFix Garage,410 N Lamar Blvd,Austin,TX,78703,512-555-0177,https://autofixgarage.example.com,auto_repair
+biz-0007,The AutoFix Garage,410 N Lamar Blvd,Austin,TX,78703,512-555-0177,https://autofixgarage.example.com,auto_repair
+biz-0008,AutoFix Garage,410 N Lamar Blvd,Austin,TX,,512-555-0177,https://autofixgarage.example.com,auto_repair
+biz-0009,Bright Smile Orthodontics,700 W 5th St,Austin,TX,78703,512-555-0190,https://brightsmileortho.example.com,orthodontist
+biz-0010,Summit Yoga Studio,1500 E 6th Street,Austin,TX,78702,512-555-0123,https://summityoga.example.com,gym
+biz-0011,Summit Yoga Studio,1500 E 6th Street,Austin,,78702,512-555-0123,https://summityoga.example.com,gym
+biz-0012,Pioneer Plumbing,33 Burnet Road,Austin,TX,78756,512-555-0166,https://pioneerplumbing.example.com,plumber
+biz-0013,Pioneer Plumbing,33 Burnet Road,Austin,TX,78756,5125550166,https://pioneerplumbing.example.com,plumber
+biz-0014,Bright Smile Dentistry,910 E 41st Street,Austin,TX,78751,512-555-0199,,dentist
+biz-0015,Summit Yoga & Wellness,2200 S Lamar Blvd,Austin,TX,78704,512-555-0134,https://summityogawellness.example.com,gym
+biz-0016,Pioneer Plumbing & Heating,512 Airport Blvd,Austin,TX,78702,512-555-0155,https://pioneerplumbingheating.example.com,plumber
+biz-0017,Bluebird Cafe,300 W 6th Street,Austin,TX,78701,(512) 555-0112,https://bluebirdcafe.example.com,cafe

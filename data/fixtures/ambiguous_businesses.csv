@@ -1,0 +1,16 @@
+business_id,name,address,city,state,postal_code,phone,website,category
+amb-01,Lakeview Dental,100 Main St Ste 2,Austin,TX,78701,512-555-2001,https://lakeview.example.com,dentist
+amb-02,Lakeview Dental,100 Main St Ste 8,Austin,TX,78701,512-555-2002,https://lakeview.example.com,dentist
+amb-03,Cedar Nail Salon,22 Oak Avenue,Round Rock,TX,78664,512-555-2003,https://cedarnails.example.com,nails
+amb-04,Cedar Nail Salon North,24 Oak Avenue,Round Rock,TX,78664,512-555-2004,https://cedarnailsnorth.example.com,nails
+amb-05,Sunrise Bakery,18 Elm Street,Austin,TX,78702,512-555-2005,https://sunrisebakery.example.com,bakery
+amb-06,Sunrise Bakery,81 Elm Street,Austin,TX,78702,512-555-2006,https://sunrisebakery.example.com,bakery
+amb-07,Sunrise Bakery,900 Commerce St,Dallas,TX,75202,214-555-2007,https://sunrisebakerydallas.example.com,bakery
+amb-08,Joe's Pizza,5 Elm Street,Austin,TX,78702,512-555-2008,https://joespizza.example.com,pizza
+amb-09,Joe's Pizzeria,5 Elm St,Austin,TX,78702,512-555-2008,https://joespizza.example.com,pizza
+amb-10,Bluebird Diner,40 River Road,Austin,TX,78703,512-555-2009,https://bluebirddiner.example.com,diner
+amb-11,The Bluebird Diner,40 River Rd,Austin,TX,78703,512-555-2009,https://bluebirddiner.example.com,diner
+amb-12,Green Leaf Grocers,77 Cedar Blvd,Austin,TX,78705,512-555-2010,https://greenleaf.example.com,grocery
+amb-13,Green Leaf Grocers LLC,77 Cedar Blvd,Austin,TX,78705,512-555-2010,https://greenleaf.example.com,grocery
+amb-14,Harbor Books,12 Bay Street,Austin,TX,78706,512-555-2011,https://harborbooks.example.com,books
+amb-15,Harbor Books,12 Bay Street,Austin,TX,78706,512-555-2011,https://harborbooks.example.com,books
